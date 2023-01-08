@@ -1,0 +1,57 @@
+/***
+***/
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    background-color: red;
+
+}
+
+.inp-text{
+    margin-left: 420px;
+    margin-top: 60px;
+    width: 500px;
+    height: 50px;
+    border-radius: 7px;
+    background-color: white;
+    border: 1px solid white;
+    }
+
+.btn-add{
+    margin-left: -67px;
+    height: 46px;
+    width: 60px;
+    border-radius: 7px;
+    background-color: white;
+    border: 1px solid white;
+    color: blue;
+}
+
+.h1-text{
+    color: white;
+    margin-left: 600px;
+    margin-top: 60px;
+}
+
+.form-style{
+    border: 1px soli black;
+}
+
+.listTasks{
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 420px;
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid white;
+
+}
