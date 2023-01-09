@@ -4,6 +4,7 @@
  */
 
 let tasks = [];
+
 let addform = document.getElementById("addform")
 
 let addButton = document.querySelectorAll("button")[0]
@@ -14,6 +15,7 @@ function addTask() {
 
     let verifInput = document.querySelectorAll("input")[0]
     //let icon = "<i class="fa fa-times" aria-hidden="true"></i>"
+
     if (verifInput.value != 0) {
 
         tasks.push(verifInput.value)
@@ -21,22 +23,26 @@ function addTask() {
         // console.log(tasks)
         addform.reset()
 
-        console.log("takss", tasks) 
+        console.log("takss", tasks)
 
         let input = document.createElement("input")
 
         input.setAttribute("type", "checkbox");
 
-        let showCheckBox = input.inputMode + tasks
+        let ico = document.createElement("i")
+
+        ico.classList.add("fa-solid", "fa-times");
+
+        let line = document.createElement("br")
+
+        // let showCheckBox = input.inputMode + tasks
 
         let listTasks = document.querySelector(".listTasks")
 
-        listTasks.append(showCheckBox)
+        listTasks.append(ico, "  ", input, "  ", tasks.pop(), line)
+
+
 
     }
 
 }
-/*
-var x = document.createElement("INPUT");
-x.setAttribute("type", "checkbox");
-document.body.appendChild(x);*/
